@@ -22,7 +22,7 @@ public class Program {
         System.out.println(seller);
 
         System.out.println("\n=== TEST 2: Seller FindById ===");
-        Department department = new Department(null, 2);
+        Department department = new Department(2, null);
         List<Seller> list = sellerDao.findByDepartment(department);
 
         for (Seller obj : list){
